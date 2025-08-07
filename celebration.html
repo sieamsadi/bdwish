@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orin's Bloom & Birthday Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌸 Orin's Bloom & Birthday Celebration 🌸</h1>
+            <p>A special celebration for our amazing medical student</p>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">🌼 Flower Game</a>
+            <a href="celebration.html" class="nav-btn active">🎉 Birthday Wish</a>
+        </div>
+
+        <div class="final-container">
+            <div class="photo-frame">
+                <img src="https://i.postimg.cc/FHwqtRBM/image.png" alt="Orin's Photo">
+                <div class="floral-decoration">🌸</div>
+                <div class="floral-decoration">🌼</div>
+                <div class="floral-decoration">🌷</div>
+                <div class="floral-decoration">🌺</div>
+            </div>
+            
+            <div class="birthday-message">
+                Happy Birthday, Orin! Keep blooming 🌸
+            </div>
+            
+            <div class="wish-text">
+                <p>Dear Orin,</p>
+                <p>On your special day, we celebrate not just another year of life, but the incredible journey you're on as an MBBS student. Your dedication to learning and future healing shines as brightly as the flowers in this garden.</p>
+                <p>May your birthday be filled with the same joy and beauty you bring to everyone around you. Like the flowers you collected, may your studies continue to blossom with new knowledge, growth, and happiness.</p>
+                <p>Wishing you a year ahead that's as vibrant and wonderful as you are! Soon you'll be healing the world, one patient at a time! 🩺✨</p>
+            </div>
+
+            <div class="birthday-elements">
+                <div class="birthday-cake" onclick="lightCandles()">
+                    <div class="cake">
+                        <div class="cake-layer cake-layer-1"></div>
+                        <div class="cake-layer cake-layer-2"></div>
+                        <div class="cake-layer cake-layer-3"></div>
+                        <div class="candles">
+                            <div class="candle candle-1">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle candle-2">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle candle-3">
+                                <div class="flame"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cake-instruction">Click the cake to light the candles!</p>
+                </div>
+                
+                <div class="balloon-container">
+                    <div class="balloon balloon-red" onclick="popBalloon(this)">🎈</div>
+                    <div class="balloon balloon-blue" onclick="popBalloon(this)">🎈</div>
+                    <div class="balloon balloon-yellow" onclick="popBalloon(this)">🎈</div>
+                    <div class="balloon balloon-green" onclick="popBalloon(this)">🎈</div>
+                    <div class="balloon balloon-purple" onclick="popBalloon(this)">🎈</div>
+                </div>
+            </div>
+
+            <div class="game-stats-summary">
+                <h3>🎮 Your Garden Adventure:</h3>
+                <p>Gerberas collected: <span id="finalGerberas">0</span></p>
+                <p>Tulips collected: <span id="finalTulips">0</span></p>
+                <p id="gameMessage">Play the flower game to see your collection stats!</p>
+            </div>
+
+            <div class="celebration-buttons">
+                <button class="nav-btn" onclick="createConfetti()">🎉 Create Confetti</button>
+                <button class="nav-btn" onclick="playBirthdayMusic()">🎵 Play Birthday Song</button>
+                <button class="nav-btn" onclick="createBalloons()">🎈 Release Balloons</button>
+                <a href="index.html" class="nav-btn">🌼 Play Flower Game Again</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="celebration.js"></script>
+</body>
+</html>
